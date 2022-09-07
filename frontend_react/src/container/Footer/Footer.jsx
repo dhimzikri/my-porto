@@ -42,19 +42,21 @@ const Footer = () => {
 
   return (
     <>
-      <h2 className="head-text">Take a coffee & chat with me</h2>
+      <h2 className="head-text1">
+        Take a coffee <span>&</span> chat with me
+      </h2>
 
       <div className="app__footer-cards">
         <div className="app__footer-card ">
           <img src={images.email} alt="email" />
           <a href="mailto:hello@micael.com" className="p-text">
-            hello@micael.com
+            dschok182@gmail.com
           </a>
         </div>
         <div className="app__footer-card">
           <img src={images.mobile} alt="phone" />
           <a href="tel:+1 (123) 456-7890" className="p-text">
-            +1 (123) 456-7890
+            +6285780457067
           </a>
         </div>
       </div>
@@ -95,7 +97,9 @@ const Footer = () => {
         </div>
       ) : (
         <div>
-          <h3 className="head-text">Thank you for getting in touch!</h3>
+          <h3 className="head-text1">
+            Thank you for <span>getting in touch!</span>
+          </h3>
         </div>
       )}
     </>

@@ -14,7 +14,10 @@ const About = () => {
   }, [])
 
   return (
-    <>
+   <motion.div
+      whileInView={{ x: [-100, 0], opacity: [0, 1] }}
+      transition={{ duration: 0.5 }}
+      >
       <h2 className="head-text1">
         I Know That
         <span> Good Design</span>
@@ -41,7 +44,7 @@ const About = () => {
           </motion.div>
         ))}
       </div>
-    </>
+    </motion.div>
   );
 };
 

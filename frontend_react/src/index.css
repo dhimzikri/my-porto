@@ -3,13 +3,21 @@
 :root {
     --font-base: "DM Sans", sans-serif;
 
-    --primary-color: rgb(49, 47, 47);
+    /* --primary-color: rgb(49, 47, 47);
     --secondary-color: #313bac;
     --black-color: #030303;
     --lightGray-color: #e4e4e4;
     --gray-color: #6b7688;
     --brown-color: #46364a;
-    --white-color: #ffffff;
+    --white-color: #ffffff; */
+
+    --primary-color: #1f2327;
+        --secondary-color: #313bac;
+        --black-color: #030303;
+        --lightGray-color: #e4e4e4;
+        --gray-color: #6b7688;
+        --brown-color: #46364a;
+        --white-color: #ffffff;
 
     --trasisition: {
         filter: blur(15px);

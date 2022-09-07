@@ -25,7 +25,9 @@ const Skills = () => {
 
   return (
     <>
-      <h2 className="head-text1">Skills & Experiences</h2>
+      <h2 className="head-text1">
+        Skills <span>&</span> Experiences
+      </h2>
 
       <div className="app__skills-container">
         <motion.div className="app__skills-list">
@@ -63,7 +65,7 @@ const Skills = () => {
                       data-for={work.name}
                       key={work.name}
                     >
-                      <h4 className="bold-text">{work.name}</h4>
+                      <h4 className="bold-text1">{work.name}</h4>
                       <p className="p-text">{work.company}</p>
                     </motion.div>
                     <ReactTooltip

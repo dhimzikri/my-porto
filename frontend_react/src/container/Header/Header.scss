@@ -1,7 +1,7 @@
 #home {
   position: relative;
   // background: url("../../assets/bgIMG.png");
-  background: rgb(49, 47, 47);
+  // background: rgb(49, 47, 47);
   background-size: cover;
   background-position: center;
   background-repeat: repeat;
@@ -66,15 +66,14 @@
     padding: 16px 24px;
     position: relative;
     border-radius: 8px;
-    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.01);
+    // box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.01);
     cursor: pointer;
     letter-spacing: 2px;
     padding: 1rem 2rem;
-    // background: var(--white-color);
+    background: var(--white-color);
     border-radius: 15px;
     flex-direction: row;
     width: auto;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
     // z-index: 10;
   }
 
@@ -114,7 +113,7 @@
       width: 100%;
       text-transform: uppercase;
       text-align: right;
-      color: white;
+      color: 0 0 0 1px rgba(0, 0, 0, 0.01);
     }
   }
 
@@ -122,7 +121,7 @@
     font-size: 2.75rem;
     font-weight: 800;
     text-align: center;
-    color: white;
+    color: var(--primary-color);
     text-transform: capitalize;
   }
 
