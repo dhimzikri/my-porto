@@ -89,14 +89,14 @@
   width: 60%;
   flex-direction: column;
   margin: 1rem 2rem;
-  // background-color: #2430af;
+  
   div {
     width: 100%;
     margin: 0.75rem 0;
     border-radius: 10px;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
-
+border: 3px solid #6973e9;
     input,
     textarea {
       width: 100%;
