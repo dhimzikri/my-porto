@@ -82,6 +82,17 @@
   }
 }
 
+.p-text1 {
+    font-size: 0.8rem;
+    text-align: left;
+    color: black;
+    font-weight: 500;
+    line-height: 1.5;
+
+    @media screen and (min-width: 2000px) {
+        font-size: 1.75rem;
+    }
+}
 .app__work-img {
   width: 100%;
   height: 230px;
