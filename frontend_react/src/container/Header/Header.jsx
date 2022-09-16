@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import {AiFillInstagram} from 'react-icons/ai'
+import { AiFillInstagram } from "react-icons/ai";
 
 import { AppWrap } from "../../wrapper";
 import { images } from "../../constants";
@@ -45,7 +45,7 @@ const Header = () => (
       transition={{ duration: 0.5, delayChildren: 0.5 }}
       className="app__header-img"
     >
-      <img src={images.profile} alt="profile_bg" /> 
+      <img src={images.profile} alt="profile_bg" />
       {/* <img src={AiFillInstagram} alt="profile_bg" /> */}
       <motion.img
         whileInView={{ scale: [0, 1] }}

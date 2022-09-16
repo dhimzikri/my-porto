@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { HiMenuAlt4, HiX } from "react-icons/hi";
+import { GiCurlyWing } from "react-icons/gi";
 import { motion } from "framer-motion";
-import { images } from "../../constants";
+// import { images } from "../../constants";
 import "./Navbar.scss";
 
 const Navbar = () => {
@@ -10,7 +11,11 @@ const Navbar = () => {
   return (
     <nav className="app__navbar">
       <div className="app__navbar-logo">
-        <img src={images.logo} alt="logo" />
+        <GiCurlyWing />
+        {/* <img src={GiCurlyWing} alt="logo" /> */}
+      </div>
+      <div className="app__navbar-logo1">
+        <GiCurlyWing />
       </div>
       <ul className="app__navbar-links">
         {[

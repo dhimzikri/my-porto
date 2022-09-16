@@ -19,16 +19,32 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  // background-color: red;
+  font-size: 3rem;
+  color: white;
+  width: auto;
+  height: 20px;
 
-  img {
-    // background-color: red;
-    width: 90px;
-    height: 20px;
+  @media screen and (min-width: 2000px) {
+    width: 180px;
+    height: 40px;
+  }
+}
 
-    @media screen and (min-width: 2000px) {
-      width: 180px;
-      height: 40px;
-    }
+.app__navbar-logo1 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  // background-color: red;
+  font-size: 3rem;
+  color: white;
+  width: auto;
+  height: 20px;
+  transform: rotateY(180deg);
+
+  @media screen and (min-width: 2000px) {
+    width: 180px;
+    height: 40px;
   }
 }
 
@@ -92,11 +108,11 @@
   align-items: center;
   background-color: var(--secondary-color);
 
-//   svg {
-//     width: 70%;
-//     height: 70%;
-//     color: var(--white-color);
-//   }
+  //   svg {
+  //     width: 70%;
+  //     height: 70%;
+  //     color: var(--white-color);
+  //   }
 
   div {
     position: fixed;
