@@ -1,0 +1,125 @@
+Hackerank
+Simple array sum
+function simpleArraySum(ar) {
+    let sum = 0;
+    for (let i = 0; i < ar.length; i++){
+        sum += ar[i]
+    }
+
+    return sum;
+
+}
+===================================================
+compare the triplets
+function compareTriplets(a, b) {
+    let score = [0,0]
+
+    for (let i = 0; i < a.length; i++)
+        a[i] > b[i] ? score[0]++ : a[i] < b[i] ? score[1]++ : ""
+    return score
+}
+===================================================
+a very big sum
+function aVeryBigSum(ar){
+  let sum = 0;
+  for(let i = 0; i < ar.length; i++){
+     sum += ar[i];
+  }
+  return sum;
+}
+====================================================
+diagonal difference
+function diagonalDifference(matrix) {
+   // length of input matrix.
+    const length = matrix.length;
+    let diagonal1 = 0, diagonal2 = 0;
+  
+    // Looping through the array and summing the diagonals.
+    for(let i = 0; i < length; i++){
+      // Calculating the primary diagonal.
+        diagonal1 += matrix[i][i];
+      // Reversing the second dimension of array to calculate secondary diagonal.
+        diagonal2 += matrix[length -1 - i][i]
+    }
+    // return absolute difference value.
+    return Math.abs(diagonal1 - diagonal2);  
+
+}
+==========================================================
+Plus Minus
+function plusMinus(arr) {
+    let positive = arr.filter(number => number > 0).length / arr.length;
+    let negative = arr.filter(number => number < 0).length / arr.length;;
+    let zeronums = arr.filter(number => number == 0).length / arr.length;;
+    return console.log(positive.toFixed(6) + '\n' + negative.toFixed(6) + '\n' + zeronums.toFixed(6))
+}
+==========================================================
+StairCase
+function staircase(n) {
+    // Write your code here
+    var line = '';
+    for(let i = 1; i <n +1; i++) {
+        line += Array(n-i).fill(' ').join('')
+        line += Array(i).fill('#').join('')
+        console.log(line)
+        line = ''
+    }
+
+}
+==========================================================
+Mini-Max Sum
+function miniMaxSum(arr) {
+// Write your code here
+    let sum=arr.reduce((a,b)=>{
+        return a+b;
+    });
+    const min=sum-Math.max(...arr);
+    const max=sum-Math.min(...arr);
+
+    console.log(min+" "+max);
+}
+===========================================================
+birthday cake candles
+function birthdayCakeCandles(ar) {
+    var maxHeight = Math.max(...ar);
+    var maxHeightCount = 0;  
+    for(var i = 0; i < ar.length; i++){
+        if (ar[i] == maxHeight){
+            maxHeightCount = maxHeightCount + 1;
+        }
+    }
+    console.log(maxHeightCount);
+    return maxHeightCount;
+}
+===========================================================
+time Conversion
+const arr = s.slice(0,8).split(':');
+arr[0] = (s.indexOf('PM') > -1) ?
+         (arr[0] == 12 ? '12' : Number(arr[0]) + 12) :
+         (arr[0] == 12 ? '00' : arr[0]);
+return arr.join(':');
+===========================================================
+Grading Students
+function gradingStudents(grades) {
+    // Write your code here
+
+    let output = [];
+    for (let i = 0; i < grades.length; i++) {
+        if (grades[i] >= 38) {
+            let reminder = grades[i] % 5;
+            if (reminder === 3) {
+                output.push(grades[i] + 2)
+            } else if (reminder === 4) {
+                output.push(grades[i] + 1)
+            } else {
+                output.push(grades[i]);
+            }
+
+        } else {
+            output.push(grades[i]);
+        }
+    }
+
+    return output;
+}
+===================================================
