@@ -19,40 +19,42 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  // background-color: red;
-  font-size: 3rem;
-  color: white;
-  width: auto;
-  height: 20px;
 
-  @media screen and (min-width: 2000px) {
-    width: 180px;
-    height: 40px;
+  img {
+    width: 80px;
+    height: 45px;
+
+    @media screen and (min-width: 2000px) {
+      width: 180px;
+      height: 40px;
+    }
   }
 }
 
-.app__navbar-logo1 {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  // background-color: red;
-  font-size: 3rem;
-  color: white;
-  width: auto;
-  height: 20px;
-  transform: rotateY(180deg);
 
-  @media screen and (min-width: 2000px) {
-    width: 180px;
-    height: 40px;
-  }
-}
+// .app__navbar-logo1 {
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+//   font-size: 3rem;
+//   color: white;
+//   // width: 10px;
+//   // height: 20px;
+//   transform: rotateY(180deg);
+
+//   @media screen and (min-width: 500px) {
+//     width: 90px;
+//     height: 40px;
+//     margin: auto;
+//   }
+// }
 
 .app__navbar-links {
   flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
+
   list-style: none;
 
   li {
@@ -74,10 +76,10 @@
       color: white;
       text-decoration: none;
       flex-direction: column;
-      font-size: 1.2rem;
-
+      font-size: 1.1rem;
       text-transform: uppercase;
       font-weight: 500;
+
       transition: all 0.3s ease-in-out;
 
       &:hover {
@@ -108,11 +110,12 @@
   align-items: center;
   background-color: var(--secondary-color);
 
-  //   svg {
-  //     width: 70%;
-  //     height: 70%;
-  //     color: var(--white-color);
-  //   }
+
+  svg {
+    width: 70%;
+    height: 70%;
+    color: var(--white-color);
+  }
 
   div {
     position: fixed;
@@ -123,16 +126,16 @@
 
     padding: 1rem;
 
-    width: 40%;
+    width: 80%;
     height: 100vh;
-    border-radius: 15px;
+    
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
     flex-direction: column;
-
+    
     // background: url('../../assets/bgWhite.png');
-    background-color: grey;
+    background-color: var(--white-color);
     background-size: cover;
     background-repeat: repeat;
 
@@ -167,7 +170,7 @@
           font-size: 1rem;
           text-transform: uppercase;
           font-weight: 500;
-          color: white;
+
           transition: all 0.3s ease-in-out;
 
           &:hover {
